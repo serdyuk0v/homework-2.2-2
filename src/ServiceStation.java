@@ -1,13 +1,7 @@
 public interface ServiceStation {
-    default void check(Car[] cars) {
-        System.out.println("Нет автомобилей!");
-    };
+    void check(Car[] cars);
 
-    default void check(Truck[] trucks) {
-        System.out.println("Нет грузовиков!");
-    };
+    void check(Truck[] trucks);
 
-    default void check(Bicycle[] bicycles) {
-        System.out.println("Нет велосипедов!");
-    };
+    void check(Bicycle[] bicycles);
 }
